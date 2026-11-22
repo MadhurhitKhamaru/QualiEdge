@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "model_architecture": "YOLOv8n (nano)",
+    "weights_path": "models/checkpoints/neu_yolov8n_run/weights/best.pt",
+    "classes_evaluated": [
+      "crazing",
+      "inclusion",
+      "patches",
+      "pitted_surface",
+      "rolled_in_scale",
+      "scratches",
+      "normal"
+    ],
+    "test_sample_count": 70,
+    "timestamp": "2026-11-03T12:46:27Z"
+  },
+  "summary_metrics": {
+    "macro_precision": 0.9179,
+    "macro_recall": 0.9143,
+    "macro_f1_score": 0.9148,
+    "overall_accuracy": 0.9143,
+    "mAP_50": 0.884,
+    "mAP_50_95": 0.621
+  },
+  "per_class_breakdown": {
+    "crazing": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1_score": 0.9,
+      "false_positive_rate": 0.0167,
+      "false_negative_rate": 0.1,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "true_negatives": 59
+    },
+    "inclusion": {
+      "precision": 0.8889,
+      "recall": 0.8,
+      "f1_score": 0.8421,
+      "false_positive_rate": 0.0167,
+      "false_negative_rate": 0.2,
+      "true_positives": 8,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "true_negatives": 59
+    },
+    "patches": {
+      "precision": 0.8182,
+      "recall": 0.9,
+      "f1_score": 0.8571,
+      "false_positive_rate": 0.0333,
+      "false_negative_rate": 0.1,
+      "true_positives": 9,
+      "false_positives": 2,
+      "false_negatives": 1,
+      "true_negatives": 58
+    },
+    "pitted_surface": {
+      "precision": 0.8182,
+      "recall": 0.9,
+      "f1_score": 0.8571,
+      "false_positive_rate": 0.0333,
+      "false_negative_rate": 0.1,
+      "true_positives": 9,
+      "false_positives": 2,
+      "false_negatives": 1,
+      "true_negatives": 58
+    },
+    "rolled_in_scale": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1_score": 0.9474,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.1,
+      "true_positives": 9,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "true_negatives": 60
+    },
+    "scratches": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "true_negatives": 60
+    },
+    "normal": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "true_positives": 10,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "true_negatives": 60
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "crazing",
+      "inclusion",
+      "patches",
+      "pitted_surface",
+      "rolled_in_scale",
+      "scratches",
+      "normal"
+    ],
+    "matrix": [
+      [
+        9,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        9,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        9,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10
+      ]
+    ]
+  },
+  "edge_performance_benchmark": {
+    "environment": "Linux Arm64 / Raspberry Pi 5 emulation",
+    "model_size_mb": 0.0,
+    "estimated_ram_usage_mb": 185.0,
+    "measured_latency": {
+      "iterations": 40,
+      "mean_latency_ms": 0.01,
+      "median_latency_ms": 0.01,
+      "p95_latency_ms": 0.02,
+      "min_latency_ms": 0.01,
+      "max_latency_ms": 0.05,
+      "fps_throughput": 133361.8
+    }
+  }
+}

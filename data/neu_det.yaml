@@ -1,0 +1,20 @@
+# data/neu_det.yaml
+# Ultralytics YOLOv8/YOLOv11 Dataset Configuration for NEU Surface Defect Database
+
+path: ./data/processed # dataset root dir
+train: images/train    # train images (relative to 'path') 80%
+val: images/val        # val images (relative to 'path') 10%
+test: images/test      # test images (relative to 'path') 10%
+
+# Number of classes
+nc: 7
+
+# Class names mapping (0-indexed)
+names:
+  0: crazing
+  1: inclusion
+  2: patches
+  3: pitted_surface
+  4: rolled_in_scale
+  5: scratches
+  6: normal

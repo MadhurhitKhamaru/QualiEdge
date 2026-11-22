@@ -1,0 +1,6 @@
+{
+  "name": "QualiEdge - Industrial Defect Detection & QC Assistant",
+  "description": "Real-time on-device industrial surface defect detection, severity assessment, and Llama+ExecuTorch quality advisory system.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
